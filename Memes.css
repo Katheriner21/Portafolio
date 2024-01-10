@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: pink;
+    /* Cambia el color de fondo a tu preferencia */
+    padding: 15px;
+    /* Ajusta el espaciado interno según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para la barra de navegación (nav) */
+#nav {
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px;
+    /* Ajusta el espaciado entre elementos según sea necesario */
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    /* Cambia el color del texto a tu preferencia */
+    font-weight: bold;
+}
+
+/* Estilos para el menú responsive */
+.nav-responsive {
+    display: none;
+    /* Oculta el menú responsive por defecto en pantallas grandes */
+}
+
+/* Media query para mostrar el menú responsive en pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    #nav {
+        display: none;
+        /* Oculta la barra de navegación en pantallas pequeñas */
+    }
+
+    .nav-responsive {
+        display: block;
+        /* Muestra el ícono del menú responsive en pantallas pequeñas */
+        cursor: pointer;
+    }
+}
+
+.contenedor-header .espacio {
+    /* No es necesario poner el nombre del contenedor header, solo el nombre de la clase*/
+
+    /*background-image: url("Imagenes/fondo2.jpeg");*/
+    background-color: thistle;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+
+.espacio {
+    text-align: center; /* Centra el contenido */
+}
+
+.espacio h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 90px; /* Ajusta el tamaño según tus necesidades */
+    padding-bottom: 15px; /* Ajusta el espacio inferior según tus necesidades */
+}
+
+.contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 50px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Centra el contenedor */
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%; /* Todas las imágenes ocupan el 100% del ancho de su contenedor */
+}
+
+.imagen {
+    width: 23.33%; /* Ajusta el ancho según tus necesidades para tener 3 por fila */
+    box-sizing: border-box;
+    padding: 10px; /* Ajusta el espacio interno según tus necesidades */
+}
+.imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Añade esta propiedad para mantener la relación de aspecto de la imagen */
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 25px;
+}

@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: pink; /* Cambia el color de fondo a tu preferencia */
+    padding: 15px; /* Ajusta el espaciado interno según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilos para el logo */
+.logo img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para la barra de navegación (nav) */
+#nav {
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px; /* Ajusta el espaciado entre elementos según sea necesario */
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    font-weight: bold;
+}
+
+/* Estilos para el menú responsive */
+.nav-responsive {
+    display: none; /* Oculta el menú responsive por defecto en pantallas grandes */
+}
+/* Media query para mostrar el menú responsive en pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    #nav {
+        display: none; /* Oculta la barra de navegación en pantallas pequeñas */
+    }
+    .nav-responsive {
+        display: block; /* Muestra el ícono del menú responsive en pantallas pequeñas */
+        cursor: pointer;
+    }    
+}
+.contenedor-header .espacio{/* No es necesario poner el nombre del contenedor header, solo el nombre de la clase*/
+    height: 320vh;
+    /*background-image: url("Imagenes/fondo2.jpeg");*/
+    background-color:thistle;
+    background-position: center center;
+    background-size: cover;
+}
+.espacio h1{
+    font-family: 'Abril Fatface', serif;
+    font-size: 90px;
+    text-align: center;
+}
+.imagen{
+    width: 350px;
+    height: 200px;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+.contenido h2{/*Dar espacio al*/
+   padding: 0px 33px;
+}
+.contenedor-secundario{
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+.a-derecha{
+    text-align: right;
+}
+.i-derecha{
+    margin-left: 50px;
+}
+.i-izquierda{
+    margin-right: 50px;
+}
+.p-derecha{
+text-align: right;
+text-align: justify;
+padding-right: 260px;
+margin-top: -100px;
+margin-left: 35px;
+}
+.p-izquierda{
+    text-align: right;
+    text-align: justify;
+    padding-left: 260px;/*espacio a los lados*/
+    margin-top: -100px;/*subir texto*/
+    margin-right: 35px;
+    }
+.a-derecha{
+height: 130px;
+background-image: url("Imagenes/fondoT.jpg");
+background-size: 80%; /* Ajusta el tamaño de la imagen al contenido */
+background-repeat: no-repeat; /* Evita la repetición del fondo */
+background-position: right center;/*posicionar un fondo de izquierda a derecha*/
+}
+
+.a-izquierda{
+height: 130px;
+background-image: url("Imagenes/fondoT.jpg");
+background-size: 80%; /* Ajusta el tamaño de la imagen al contenido */
+background-repeat: no-repeat; /* Evita la repetición del fondo */
+background-position: left center;
+}
+footer{
+    background-color: pink;
+    text-align: center;
+    padding: 25px;
+}
+
+

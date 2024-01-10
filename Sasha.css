@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: pink;
+    /* Cambia el color de fondo a tu preferencia */
+    padding: 15px;
+    /* Ajusta el espaciado interno según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para la barra de navegación (nav) */
+#nav {
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 20px;
+    /* Ajusta el espaciado entre elementos según sea necesario */
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    /* Cambia el color del texto a tu preferencia */
+    font-weight: bold;
+}
+
+/* Estilos para el menú responsive */
+.nav-responsive {
+    display: none;
+    /* Oculta el menú responsive por defecto en pantallas grandes */
+}
+
+/* Media query para mostrar el menú responsive en pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    #nav {
+        display: none;
+        /* Oculta la barra de navegación en pantallas pequeñas */
+    }
+
+    .nav-responsive {
+        display: block;
+        /* Muestra el ícono del menú responsive en pantallas pequeñas */
+        cursor: pointer;
+    }
+}
+
+.contenedor-header .espacio {
+    /* No es necesario poner el nombre del contenedor header, solo el nombre de la clase*/
+    height: 185vh;
+    /*background-image: url("Imagenes/fondo2.jpeg");*/
+    background-color: thistle;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+}
+
+.espacio {
+    text-align: center;
+}
+
+.espacio h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 40px;
+    padding-bottom: 15px;
+    padding: 40px;
+}
+
+.contenedor1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+    padding: 45px;
+}
+
+.contenedor1 div img {
+    width: 100%; /* Todas las imágenes ocupan el 100% del ancho del contenedor */
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 25px;
+}
